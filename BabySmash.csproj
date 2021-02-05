@@ -32,6 +32,12 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="BuildProcessTemplates\**" />
+    <EmbeddedResource Remove="BuildProcessTemplates\**" />
+    <None Remove="BuildProcessTemplates\**" />
+    <Page Remove="BuildProcessTemplates\**" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Update="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -138,7 +144,6 @@
     <EmbeddedResource Include="Resources\Sounds\EditedJackPlaysBabySmash.wav" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BuildProcessTemplates\" />
     <Folder Include="Resources\Voices\Female\" />
     <Folder Include="Resources\Voices\Male\" />
   </ItemGroup>
